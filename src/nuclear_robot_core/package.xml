@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>nuclear_robot_core</name>
+  <version>1.0.0</version>
+  <description>Advanced nuclear robotics system for autonomous radiation mapping and facility inspection</description>
+  <maintainer email="nuclear.robotics@company.com">Nuclear Robotics Team</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- Build dependencies -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  
+  <!-- Core ROS2 dependencies -->
+  <depend>rclcpp</depend>
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>visualization_msgs</depend>
+  <depend>diagnostic_msgs</depend>
+  
+  <!-- Navigation and motion planning -->
+  <depend>nav2_msgs</depend>
+  <depend>nav2_core</depend>
+  <depend>nav2_costmap_2d</depend>
+  <depend>nav2_util</depend>
+  <depend>teb_local_planner</depend>
+  <depend>moveit_core</depend>
+  <depend>moveit_msgs</depend>
+  <depend>moveit_ros_planning</depend>
+  <depend>moveit_ros_planning_interface</depend>
+  
+  <!-- Transform and timing -->
+  <depend>tf2</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
+  
+  <!-- Control systems -->
+  <depend>control_msgs</depend>
+  <depend>trajectory_msgs</depend>
+  <depend>controller_manager</depend>
+  <depend>controller_interface</depend>
+  
+  <!-- Robot description and simulation -->
+  <depend>robot_state_publisher</depend>
+  <depend>joint_state_publisher</depend>
+  <depend>urdf</depend>
+  <depend>xacro</depend>
+  
+  <!-- Gazebo and Isaac Lab simulation -->
+  <depend>gazebo_ros</depend>
+  <depend>gazebo_plugins</depend>
+  
+  <!-- PX4 integration for drone operations -->
+  <depend>px4_msgs</depend>
+  <depend>px4_ros_com</depend>
+  
+  <!-- Message generation -->
+  <build_depend>rosidl_default_generators</build_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+  <member_of_group>rosidl_interface_packages</member_of_group>
+  
+  <!-- Python dependencies for advanced algorithms -->
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-scipy</exec_depend>
+  <exec_depend>python3-matplotlib</exec_depend>
+  <exec_depend>python3-sklearn</exec_depend>
+  <exec_depend>python3-opencv</exec_depend>
+  
+  <!-- Testing -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  <test_depend>ament_cmake_pytest</test_depend>
+  
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
